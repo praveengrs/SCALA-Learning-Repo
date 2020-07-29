@@ -1,0 +1,12 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# Create an order
+ #+ nocsrf
+POST     /placeOrder                           com.cart.inventory.controllers.OrderController.placeOrder
+
+# Cancel an order
+#+ nocsrf
+PUT     /cancelOrder                           com.cart.inventory.controllers.OrderController.cancelOrder
